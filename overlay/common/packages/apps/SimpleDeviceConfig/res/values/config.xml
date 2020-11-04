@@ -54,6 +54,10 @@
 
         <!-- Disable always screen on -->
         <item>attention_manager_service/keep_screen_on_enabled=false</item>
+
+        <!-- Disable unused AiAi features -->
+        <item>device_personalization_services/Attention__enabled=false</item>
+        <item>device_personalization_services/Logging__enable_aiai_clearcut_logging=false</item>
     </string-array>
 
     <string-array name="configs_base_soft">
