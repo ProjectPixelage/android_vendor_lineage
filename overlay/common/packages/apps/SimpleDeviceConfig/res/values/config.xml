@@ -55,6 +55,9 @@
         <!-- Disable always screen on -->
         <item>attention_manager_service/keep_screen_on_enabled=false</item>
 
+        <!-- ART heap compaction for cached apps -->
+        <item>activity_manager/use_compaction=true</item>
+
         <!-- Disable unused AiAi features -->
         <item>device_personalization_services/Attention__enabled=false</item>
         <item>device_personalization_services/Logging__enable_aiai_clearcut_logging=false</item>
