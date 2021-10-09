@@ -58,6 +58,10 @@
         <!-- ART heap compaction for cached apps -->
         <item>activity_manager/use_compaction=true</item>
 
+        <!-- Keep up to 7 days of permission usage history -->
+        <item>privacy/discrete_history_cutoff_millis=604800000</item>
+        <item>privacy/privacy_dashboard_7_day_toggle=true</item>
+
         <!-- Disable unused AiAi features -->
         <item>device_personalization_services/Attention__enabled=false</item>
         <item>device_personalization_services/Logging__enable_aiai_clearcut_logging=false</item>
