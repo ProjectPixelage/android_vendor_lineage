@@ -24,8 +24,6 @@
         <!-- Don't pin camera app to save memory -->
         <item>runtime_native_boot/pin_camera=false</item>
 
-        <!-- Use new privacy indicators for location -->
-        <item>privacy/location_indicators_enabled=true</item>
         <!-- Allow users to disable location indicators in Developer Options -->
         <item>privacy/location_indicator_settings_enabled=true</item>
 
@@ -53,5 +51,10 @@
 
         <!-- Disable always screen on -->
         <item>attention_manager_service/keep_screen_on_enabled=false</item>
+    </string-array>
+
+    <string-array name="configs_base_soft">
+        <!-- Use new privacy indicators for location -->
+        <item>privacy/location_indicators_enabled=true</item>
     </string-array>
 </resources>
