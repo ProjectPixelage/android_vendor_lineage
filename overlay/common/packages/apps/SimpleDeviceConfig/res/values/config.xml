@@ -24,6 +24,16 @@
         <!-- Enable the new and advanced Privacy Hub -->
         <item>privacy/safety_center_is_enabled=true</item>
 
+        <!-- System Ui -->
+        <item>systemui/quick_access_wallet_enabled=true</item>
+        <item>systemui/enable_screenshot_corner_flow=true</item>
+        <item>systemui/enable_screenshot_notification_smart_actions=true</item>
+        <item>systemui/enable_screenshot_scrolling=true</item>
+
+        <!-- Notifications -->
+        <item>notification_assistant/generate_actions=true</item>
+        <item>notification_assistant/generate_replies=true</item>
+
         <!-- Don't pin camera app to save memory -->
         <item>runtime_native_boot/pin_camera=false</item>
 
@@ -68,6 +78,14 @@
         <!-- Disable unused AiAi features -->
         <item>device_personalization_services/Attention__enabled=false</item>
         <item>device_personalization_services/Logging__enable_aiai_clearcut_logging=false</item>
+
+        <!-- Notification Assistant -->
+        <item>device_personalization_services/NotificationAssistant__enable_service=true</item>
+        <item>device_personalization_services/NotificationAssistant__enable_upgrade_importance=true</item>
+        <item>device_personalization_services/NotificationAssistant__importance_model_download_url=https://www.gstatic.com/android/notifications/importance/v1/manifest.json</item>
+        <item>device_personalization_services/NotificationAssistant__importance_model_type=channel_stats</item>
+        <item>device_personalization_services/NotificationAssistant__importance_model_version=1</item>
+        <item>device_personalization_services/NotificationAssistant__max_importance_variance=0.5</item>
     </string-array>
 
     <string-array name="configs_base_soft">
