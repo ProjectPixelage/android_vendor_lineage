@@ -127,6 +127,10 @@
         <item>org.briarproject.briar.android</item>
     </string-array>
 
+    <!-- Define device configs on boot -->
+    <string-array name="global_device_configs_override">
+    </string-array>
+
     <!-- Face detection for screen auto rotation -->
     <string name="config_defaultRotationResolverService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiRotationResolverService</string>
 
