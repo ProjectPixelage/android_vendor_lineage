@@ -4,22 +4,21 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# LineageOS System Version
+# Project Pixelage System Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGE_VERSION) \
-    ro.lineagelegal.url=https://lineageos.org/legal
+    ro.pixelage.version=$(LINEAGE_VERSION) \
+    ro.pixelage.releasetype=$(PIXELAGE_BUILDTYPE) \
+    ro.pixelage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.modversion=$(PIXELAGE_VERSION)
 
-# LineageOS Platform Display Version
+# Project Pixelage Platform Display Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
+    ro.pixelage.display.version=$(LINEAGE_DISPLAY_VERSION)
 
 # LineageOS Platform SDK Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
+    ro.pixelage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
 
 # LineageOS Platform Internal Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
+    ro.pixelage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
