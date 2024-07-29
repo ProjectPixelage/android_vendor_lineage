@@ -187,6 +187,10 @@ ifeq ($(WITH_GAPPS),true)
 $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 endif
 
+# Game Space
+PRODUCT_PACKAGES += \
+    GameSpace
+
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
