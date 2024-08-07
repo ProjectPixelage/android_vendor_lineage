@@ -5,8 +5,7 @@ PRODUCT_SIZE := full
 
 # Apps
 PRODUCT_PACKAGES += \
-    Profiles \
-    Recorder
+    Profiles
 
 ifneq ($(PRODUCT_NO_CAMERA),true)
 PRODUCT_PACKAGES += \
