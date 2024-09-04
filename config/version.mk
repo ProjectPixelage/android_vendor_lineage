@@ -11,5 +11,13 @@ PIXELAGE_PLATFORM_VERSION := 15.0
 PIXELAGE_VERSION := ProjectPixelage_$(PIXELAGE_BUILD)-$(PIXELAGE_PLATFORM_VERSION)-$(PIXELAGE_BUILD_DATE)
 PIXELAGE_VERSION_PROP := fifteen
 
+# Pixelage Platform Version
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.pixelage.build.date=$(BUILD_DATE) \
+    ro.pixelage.device=$(PIXELAGE_BUILD) \
+    ro.pixelage.fingerprint=$(ROM_FINGERPRINT) \
+    ro.pixelage.version=$(PIXELAGE_VERSION) \
+    ro.modversion=$(PIXELAGE_VERSION)
+
 # Signing
 -include vendor/pixelage-priv/keys/keys.mk
