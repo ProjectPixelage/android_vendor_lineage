@@ -6,12 +6,12 @@ import (
 	"android/soong/android"
 )
 
-func customExpandVariables(ctx android.ModuleContext, in string) string {
-	customVars := ctx.Config().VendorConfig("customVarsPlugin")
+func pixelageExpandVariables(ctx android.ModuleContext, in string) string {
+	pixelageVars := ctx.Config().VendorConfig("pixelageVarsPlugin")
 
 	out, err := android.Expand(in, func(name string) (string, error) {
-		if customVars.IsSet(name) {
-			return customVars.String(name), nil
+		if pixelageVars.IsSet(name) {
+			return pixelageVars.String(name), nil
 		}
 		// This variable is not for us, restore what the original
 		// variable string will have looked like for an Expand

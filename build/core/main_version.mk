@@ -4,17 +4,10 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# PixelOS Platform Version
+# Pixelage Platform Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.custom.build.date=$(BUILD_DATE) \
-    ro.custom.device=$(CUSTOM_BUILD) \
-    ro.custom.fingerprint=$(ROM_FINGERPRINT) \
-    ro.custom.version=$(CUSTOM_VERSION) \
-    ro.modversion=$(CUSTOM_VERSION)
-
-# Updater
-ifeq ($(IS_OFFICIAL),true)
-    ADDITIONAL_SYSTEM_PROPERTIES  += \
-        net.pixelos.build_type=ci \
-        net.pixelos.version=$(CUSTOM_VERSION_PROP)
-endif
+    ro.pixelage.build.date=$(BUILD_DATE) \
+    ro.pixelage.device=$(PIXELAGE_BUILD) \
+    ro.pixelage.fingerprint=$(ROM_FINGERPRINT) \
+    ro.pixelage.version=$(PIXELAGE_VERSION) \
+    ro.modversion=$(PIXELAGE_VERSION)
