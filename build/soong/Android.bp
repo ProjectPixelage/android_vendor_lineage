@@ -478,7 +478,7 @@ qti_vibrator_hal {
 soong_config_module_type {
     name: "qcom_libfmjni",
     module_type: "cc_defaults",
-    config_namespace: "lineageQcomVars",
+    config_namespace: "pixelageQcomVars",
     bool_variables: ["no_fm_firmware"],
     properties: ["cflags"],
 }
@@ -492,7 +492,7 @@ qcom_libfmjni {
     },
 }
 
-    soong_config_module_type {
+soong_config_module_type {
     name: "uses_oplus_camera",
     module_type: "cc_defaults",
     config_namespace: "pixelageGlobalVars",
