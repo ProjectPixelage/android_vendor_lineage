@@ -98,6 +98,9 @@ PRODUCT_PACKAGES += \
     build-manifest
 
 # Pixelage packages
+PRODUCT_PACKAGES += \
+    GameSpace
+    
 #PRODUCT_PACKAGES += \
 #    Updater
 
