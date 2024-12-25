@@ -4,6 +4,9 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 # GApps
 $(call inherit-product, vendor/gms/products/gms.mk)
 
+# Include pixelage-pif
+$(call inherit-product-if-exists, vendor/pixelage-pif/product.mk)
+
 # Include pixelage-priv
 $(call inherit-product-if-exists, vendor/pixelage-priv/config/common.mk)
 
