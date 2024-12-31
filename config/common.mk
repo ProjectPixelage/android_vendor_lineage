@@ -123,6 +123,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleSettingsConfig
 
+# Disable default frame rate limit for games
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.graphics.game_default_frame_rate.disabled=true
+
 # Extra tools
 PRODUCT_PACKAGES += \
     bash \
