@@ -19,6 +19,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.pixelage.build.version=$(PIXELAGE_DISPLAY_VERSION) \
     ro.pixelage.device=$(PIXELAGE_BUILD) \
     ro.pixelage.fingerprint=$(ROM_FINGERPRINT) \
+    ro.pixelage.maintainer=$(PIXELAGE_MAINTAINER) \
     ro.pixelage.releasetype=$(PIXELAGE_BUILDTYPE) \
     ro.pixelage.version=$(PIXELAGE_VERSION) \
     ro.modversion=$(PIXELAGE_VERSION)
