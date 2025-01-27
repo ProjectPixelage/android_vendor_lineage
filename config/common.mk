@@ -109,6 +109,12 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/pixelage/prebuilt/common/etc/init/init.pixelage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.pixelage-updater.rc
 
+# Quick Tap
+ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
+PRODUCT_PACKAGES += \
+    ColumbusService
+endif
+
 # Gamespace
 PRODUCT_PACKAGES += \
     GameSpace
