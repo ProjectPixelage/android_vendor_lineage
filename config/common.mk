@@ -115,6 +115,14 @@ PRODUCT_PACKAGES += \
     ColumbusService
 endif
 
+# Freeform
+PRODUCT_PACKAGES += \
+    LMOFreeform \
+    LMOFreeformSidebar
+
+PRODUCT_COPY_FILES += \
+    vendor/pixelage/config/permissions/privapp-permissions-pixel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-pixel.xml
+
 # Gamespace
 PRODUCT_PACKAGES += \
     GameSpace
