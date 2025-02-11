@@ -123,6 +123,11 @@ endif
 PRODUCT_PACKAGES += \
     GameSpace
 
+# LMOFreeform
+PRODUCT_PACKAGES += \
+    LMOFreeform \
+    LMOFreeformSidebar
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images \
